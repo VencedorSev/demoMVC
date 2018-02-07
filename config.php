@@ -30,6 +30,9 @@
         define('DB', 'demomvc');
     }
 	
+	/*
+	methode pour aller chercher des fichiers
+	*/
 	function my_autoloader($class) 
 	{
 		$dossierClasse = array('modeles/', 'vues/', 'lib/mySQL/', 'lib/', '' );
@@ -47,5 +50,7 @@
 	}
 	
 	spl_autoload_register('my_autoloader');
+
+	//Commentaires 
 	
 ?>
